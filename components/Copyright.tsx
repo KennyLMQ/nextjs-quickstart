@@ -8,7 +8,11 @@ export default function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="/">
+      <Link
+        color="inherit"
+        href="https://github.com/KennyLMQ/nextjs-quickstart"
+        target="_blank"
+      >
         Next.js Quickstart
       </Link>
       {" " + new Date().getFullYear() + "."}

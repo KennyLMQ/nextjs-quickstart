@@ -2,13 +2,12 @@ version: "3"
 services:
   web:
     build:
-      context: "./nextjs"
       dockerfile: Dockerfile
       target: base
     command: sh -c "npm install && npm run dev"
     container_name: ${COMPOSE_PROJECT_NAME}_web
     env_file:
-      - ./postgres/.env.local
+      - ./database/.env.local
     environment:
       - NODE_ENV=development
       - PORT=3000
@@ -16,15 +15,15 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./nextjs:/root/app
+      - .:/root/app
     working_dir: /root/app
   database:
     container_name: ${COMPOSE_PROJECT_NAME}_db
-    image: "postgres"
+    image: "postgres:15"
     ports:
       - 5432:5432
     env_file:
-      - ./postgres/.env.local
+      - ./database/.env.local
     volumes:
       - ${COMPOSE_PROJECT_NAME}_data:/var/lib/postgresql/data/
 volumes:
