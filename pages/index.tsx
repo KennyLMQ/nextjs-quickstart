@@ -1,4 +1,3 @@
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
@@ -25,18 +24,22 @@ export default function Home({ result }: Props) {
 }
 
 export async function getStaticProps() {
-  let result;
+  let result: string;
 
   try {
     const res = await pool.query("SELECT NOW()");
 
-    result = res.rows[0]["now"];
-    result = result.toTimeString();
-  } catch (err: any) {
-    console.error(err.message);
+    result = res.rows[0]["now"].toTimeString();
+  } catch (e) {
+    if (e instanceof Error) {
+      console.error(e.message);
+      result = "DB not connected.";
+    } else {
+      throw e;
+    }
   }
 
   return {
-    props: { result: result },
+    props: { result },
   };
 }
