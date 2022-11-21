@@ -28,7 +28,7 @@ curl https://codeload.github.com/KennyLMQ/nextjs-quickstart/tar.gz/main | tar -x
 Duplicate the `.env.sample` file:
 
 ```sh
-cd nextjs-quickstart/postgres
+cd nextjs-quickstart/database
 cp .env.sample .env.local
 ```
 
@@ -39,7 +39,7 @@ Update all three variables (`POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`)
 Install packages (needs to be run once to setup husky):
 
 ```sh
-cd nextjs-quickstart/nextjs
+cd nextjs-quickstart
 npm i
 ```
 
