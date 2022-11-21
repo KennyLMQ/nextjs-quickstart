@@ -1,4 +1,5 @@
 import { createTheme, Theme } from "@mui/material/styles";
+
 import { roboto } from "./roboto";
 
 export function createDarkTheme(): Theme {
@@ -6,7 +7,7 @@ export function createDarkTheme(): Theme {
     palette: {
       mode: "dark",
       primary: {
-        main: "#88C0D0",
+        main: '#88C0D0',
       },
       secondary: {
         main: "#81A1C1",
