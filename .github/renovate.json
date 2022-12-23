@@ -12,7 +12,6 @@
       "automerge": true,
       "schedule": ["every saturday"],
       "automergeType": "branch",
-      "commitMessageAction": "build: update dependencies",
       "ignoreTests": true
     }
   ]
