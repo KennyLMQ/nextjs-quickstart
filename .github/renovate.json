@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "timezone": "Asia/Singapore",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["every sunday"]
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "schedule": ["every saturday"],
+      "automergeType": "branch",
+      "commitMessageAction": "build: update dependencies",
+      "ignoreTests": true
+    }
+  ]
+}
