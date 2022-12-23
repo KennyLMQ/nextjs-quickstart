@@ -2,7 +2,7 @@ import createEmotionServer from "@emotion/server/create-instance";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
 import createEmotionCache from "../emotion/createEmotionCache";
-import { roboto } from "../theme/roboto";
+import { roboto } from "../themes/roboto";
 
 export default class MyDocument extends Document {
   render() {

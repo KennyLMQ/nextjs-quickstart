@@ -9,8 +9,8 @@ import { useState } from "react";
 import Copyright from "../components/Copyright";
 import Header from "../components/Header";
 import createEmotionCache from "../emotion/createEmotionCache";
-import { createDarkTheme } from "../theme/darkTheme";
-import { createLightTheme } from "../theme/lightTheme";
+import { createDarkTheme } from "../themes/darkTheme";
+import { createLightTheme } from "../themes/lightTheme";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
