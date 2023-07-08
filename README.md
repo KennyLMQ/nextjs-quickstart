@@ -2,7 +2,7 @@
 
 ## The idea behind the quickstart
 
-The project builds on top of MUI's [nextjs-with-typescript](https://github.com/mui/material-ui/tree/master/examples/nextjs-with-typescript) example.
+The project builds on top of MUI's [material-next-ts](https://github.com/mui/material-ui/tree/master/examples/material-next-ts) example.
 
 Adddtional libraries ([ESLint](https://eslint.org/), [husky](https://typicode.github.io/husky/), [lint-staged](https://github.com/okonet/lint-staged) and [pg](https://node-postgres.com/)) have been installed and configured.
 
@@ -47,7 +47,7 @@ Run docker compose:
 
 ```sh
 cd nextjs-quickstart
-docker-compose up
+docker compose up
 ```
 
 Go to http://localhost:3000/ and you should see something similar to this:
