@@ -1,5 +1,5 @@
 # base image contains the dependencies and no application code
-FROM node:20 as base
+FROM node:21 as base
 
 # prod image inherits from base
 FROM base as prod
