@@ -1,21 +1,19 @@
 import MuiLink from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import NextLink from "next/link";
-
-import Link from "../components/Link";
+import * as React from "react";
 
 export default function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
-      <Link
+      <MuiLink
         color="inherit"
         href="https://github.com/KennyLMQ/nextjs-quickstart"
         target="_blank"
       >
         Next.js Quickstart
-      </Link>
-      {" " + new Date().getFullYear() + "."}
+      </MuiLink>{" "}
+      {new Date().getFullYear()}.
     </Typography>
   );
 }

@@ -12,8 +12,6 @@ import {
 } from "@mui/material";
 import { Container } from "@mui/system";
 
-import { NextLinkComposed } from "./Link";
-
 interface HeaderProps {
   isDarkTheme?: boolean;
   changeTheme: Function;
@@ -27,8 +25,8 @@ const Header: React.FC<HeaderProps> = ({ isDarkTheme, changeTheme }) => {
           <HomeIcon sx={{ mr: 1 }} />
           <Typography
             variant="h6"
-            component={NextLinkComposed}
-            to="/"
+            component="a"
+            href="/"
             sx={{
               mr: 2,
               fontWeight: 700,

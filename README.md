@@ -2,7 +2,7 @@
 
 ## The idea behind the quickstart
 
-The project builds on top of MUI's [material-next-ts](https://github.com/mui/material-ui/tree/master/examples/material-next-ts) example.
+The project builds on top of MUI's [material-ui-nextjs-ts](https://github.com/mui/material-ui/tree/master/examples/material-ui-nextjs-ts) example.
 
 Adddtional libraries ([ESLint](https://eslint.org/), [husky](https://typicode.github.io/husky/), [lint-staged](https://github.com/okonet/lint-staged) and [pg](https://node-postgres.com/)) have been installed and configured.
 
