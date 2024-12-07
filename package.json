@@ -20,13 +20,13 @@
     "@mui/material-nextjs": "^5.15.9",
     "next": "^14.1.0",
     "pg": "^8.11.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
     "@types/pg": "^8.11.0",
-    "@types/react": "^18.2.55",
+    "@types/react": "^19.0.0",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.1.0",
     "eslint-config-prettier": "^9.1.0",
